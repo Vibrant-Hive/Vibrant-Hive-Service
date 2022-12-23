@@ -12,9 +12,6 @@ class User(models.Model):
     languages = models.CharField(max_length=100)
     password = models.CharField(max_length=20)
     rate = models.IntegerField(default=0)
-    resume = models.TextField()
+    # resume = models.FileField(upload_to='documents')
     role = models.CharField(max_length=200)
     skills = models.CharField(max_length=200)
-
-
-
